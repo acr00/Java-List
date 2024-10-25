@@ -3,7 +3,7 @@ package com.example;
 import java.util.Collections;
 import java.util.List;
 
-public final class App {
+public final class AppDiasSemana {
 
     public void createList(List<String> days) {
         days.add("Lunes");
