@@ -5,58 +5,59 @@ import java.util.List;
 
 public final class AppDiasSemana {
 
-    public void createList(List<String> days) {
-        days.add("Lunes");
-        days.add("Martes");
-        days.add("Miércoles");
-        days.add("Jueves");
-        days.add("Viernes");
-        days.add("Sábado");
-        days.add("Domingo");
+    public void createList(List<String> dias) {
+
+        dias.add("Lunes");
+        dias.add("Martes");
+        dias.add("Miércoles");
+        dias.add("Jueves");
+        dias.add("Viernes");
+        dias.add("Sábado");
+        dias.add("Domingo");
     }
 
-    public List<String> getList(List<String> days) {
-        createList(days);
+    public List<String> getList(List<String> dias) {
+        createList(dias);
 
-        return days;
+        return dias;
     }
 
-    public Integer getLong(List<String> days) {
-        createList(days);
+    public Integer getLong(List<String> dias) {
+        createList(dias);
 
-        return days.size();
+        return dias.size();
     }
 
-    public void deleteOne(List<String> days) {
-        createList(days);
+    public void deleteOne(List<String> dias) {
+        createList(dias);
 
-        days.remove(2);
+        dias.remove(2);
     }
 
-    public String getElement(List<String> days, int number) {
-        createList(days);
+    public String getElement(List<String> dias, int numero) {
+        createList(dias);
 
-        return days.get(number);
+        return dias.get(numero);
     }
 
-    public boolean getExit(List<String> days, String day) {
-        createList(days);
+    public boolean getExit(List<String> dias, String dia) {
+        createList(dias);
 
-        return days.contains(day);
+        return dias.contains(dia);
     }
 
-    public List<String> orderList(List<String> days) {
-        createList(days);
+    public List<String> orderList(List<String> dias) {
+        createList(dias);
 
-        Collections.sort(days);
-        return days;
+        Collections.sort(dias);
+        return dias;
     }
 
-    public List<String> deleteList(List<String> days) {
-        createList(days);
+    public List<String> deleteList(List<String> dias) {
+        createList(dias);
 
-        days.clear();
+        dias.clear();
 
-        return days;
+        return dias;
     }
 }
