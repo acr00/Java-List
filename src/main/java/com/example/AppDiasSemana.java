@@ -22,19 +22,19 @@ public final class AppDiasSemana {
         return dias;
     }
 
-    public Integer getLong(List<String> dias) {
+    public Integer LargoSemana(List<String> dias) {
         createList(dias);
 
         return dias.size();
     }
 
-    public void deleteOne(List<String> dias) {
+    public void BorraUnDia(List<String> dias) {
         createList(dias);
 
         dias.remove(2);
     }
 
-    public String getElement(List<String> dias, int numero) {
+    public String CogeElementoLista(List<String> dias, int numero) {
         createList(dias);
 
         return dias.get(numero);
